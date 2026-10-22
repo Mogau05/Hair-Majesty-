@@ -1,0 +1,66 @@
+{
+  "currency": "USD",
+  "currencyLocale": "en-US",
+  "priceNote": "Example prices only — please contact Hair Majesty to confirm current pricing.",
+  "services": [
+    {
+      "id": "silk-press",
+      "name": "Silk Press",
+      "category": "Hairstyle",
+      "description": "A smooth, polished finish with body and beautiful movement.",
+      "price": 75
+    },
+    {
+      "id": "protective-braids",
+      "name": "Protective Braids",
+      "category": "Hairstyle",
+      "description": "A versatile protective style, tailored to your look.",
+      "price": 120
+    },
+    {
+      "id": "natural-twist",
+      "name": "Natural Twist Set",
+      "category": "Hairstyle",
+      "description": "Defined, soft twists that celebrate your natural texture.",
+      "price": 85
+    },
+    {
+      "id": "bridal-style",
+      "name": "Bridal Styling",
+      "category": "Hairstyle",
+      "description": "A thoughtful, camera-ready look for your special day.",
+      "price": 150
+    },
+    {
+      "id": "makeup",
+      "name": "Makeup Application",
+      "category": "Beauty service",
+      "description": "A fresh, personalized makeup look for any occasion.",
+      "price": 65
+    },
+    {
+      "id": "brow-shaping",
+      "name": "Brow Shaping",
+      "category": "Beauty service",
+      "description": "A tidy, flattering shape designed around you.",
+      "price": 25
+    },
+    {
+      "id": "lash-service",
+      "name": "Lash Service",
+      "category": "Beauty service",
+      "description": "A soft finishing touch to complete your beauty look.",
+      "price": 40
+    }
+  ],
+  "bookingFees": {
+    "salon": {
+      "label": "Salon appointment",
+      "price": 0
+    },
+    "home": {
+      "label": "Home call travel fee",
+      "price": 25
+    }
+  }
+}
