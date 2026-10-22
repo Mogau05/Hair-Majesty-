@@ -56,6 +56,19 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. Keep the te
 
 For automatic server restarts during development, use `npm run dev`.
 
+## Publish on Render
+
+The included [`render.yaml`](./render.yaml) configures this project as a Render Node.js web service. Render builds the Express site, starts it with `npm start`, and checks that `/api/services` responds.
+
+1. Push the project, including `render.yaml`, to the `main` branch of your GitHub repository.
+2. Sign in to [Render](https://render.com/) and choose **New → Blueprint**.
+3. Connect GitHub and select `Mogau05/Hair-Majesty-`.
+4. Review the `hair-majesty` web service and select **Apply**. Render reads its build and start settings from `render.yaml`.
+5. In the service's **Environment** settings, add the real `SMTP_HOST`, `SMTP_USER`, `SMTP_PASSWORD`, and `MAIL_FROM` values supplied by your email provider. The Blueprint pre-fills `SMTP_PORT=587` and `SMTP_SECURE=false`; change these if your provider requires different SMTP settings. Keep credentials in Render's environment settings, never in website files or GitHub.
+6. Wait for the deploy to finish, then open the public `onrender.com` URL shown on the service page.
+
+Booking emails will not work until valid SMTP settings have been added to Render. If you change the service names, prices, or currency, update `data/services.json`, commit the change, and push it to GitHub so Render can redeploy.
+
 ## 6. Test a booking
 
 1. Confirm valid SMTP credentials are configured in `.env`.
